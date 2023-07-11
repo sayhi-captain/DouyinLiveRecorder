@@ -9,18 +9,16 @@ from dylr.util import logger
 import dylr.core.record_manager
 
 
-def on_open(gui: bool):
+def on_open():
     """
      软件刚启动时
-     :param gui: 是否以GUI形式启动
     """
     ...
 
 
-def on_loaded(gui: bool):
+def on_loaded():
     """
      软件加载完成时，此时配置、房间等已加载完成
-     :param gui: 是否以GUI形式启动
     """
     ...
 
