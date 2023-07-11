@@ -8,3 +8,5 @@
 forum.MD
 rooms - bak.json
 .vscode
+.venv
+**/__pycache__/
