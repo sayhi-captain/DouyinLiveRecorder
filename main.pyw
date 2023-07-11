@@ -2,7 +2,7 @@ import dylr.core.app as app
 
 
 def main():
-    app.init(False)
+    app.init()
 
 
 if __name__ == "__main__":
