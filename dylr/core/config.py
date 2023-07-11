@@ -90,8 +90,6 @@ def read_rooms() -> list:
         else:
             user_sec_id = None
         res.append(Room(room_id, room_name, auto_record, record_danmu, important, user_sec_id))
-        if not app.win_mode:
-            print(f'加载房间 {room_name}({room_id})')
         logger.info(f'loaded room: {room_name}({room_id}) '
                     f'auto_record={auto_record} record_danmu={record_danmu} '
                     f'important={important} user_sec_id={user_sec_id}')
