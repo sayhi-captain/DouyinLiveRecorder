@@ -31,7 +31,8 @@ class Recording:
 
         now = time.localtime()
         now_str = time.strftime('%Y%m%d_%H%M%S', now)
-        video_filename = f"download/{self.room.room_name}/{now_str}.flv"
+        download_path = config.get_download_path()
+        video_filename = f"{download_path}/{self.room.room_name}/{now_str}.flv"
 
         try:
             plugin.on_live_start(self.room, video_filename)
