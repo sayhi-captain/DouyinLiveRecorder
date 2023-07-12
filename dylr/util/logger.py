@@ -13,7 +13,7 @@ import traceback
 from dylr.core import config, app
 
 now = time.localtime()
-now_str = time.strftime('%Y%m%d_%H%M%S', now)
+now_str = time.strftime('%Y%m%d', now)
 filename = f'./logs/{now_str}.log'
 if not os.path.exists('./logs'):
     os.mkdir('./logs')
